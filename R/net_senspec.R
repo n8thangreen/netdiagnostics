@@ -1,14 +1,33 @@
 
-#' net_sensspec
+#' Net test sensitivity and specificity.
 #'
-#' @param pos_threshold
-#' @param sens
-#' @param spec
+#' Combines multiple test into a de facto single test.
 #'
-#' @return
+#' Assuming each test performance is completely defined by it sensitivity and
+#' specificity, various set intercept probabilities are calculated and combined,
+#' similar to the inclusion-exclusion formula in probability theory
+#' \url{https://en.m.wikipedia.org/wiki/Inclusion-exclusion_principle}.
+#'
+#' @section Serial vs parallel: It's assumed that the tests are done in parallel
+#'   but in some cases a parallel diagnostic pathway is equivalent.
+#'
+#' @param pos_threshold Minimum number of positive required for overall
+#'   positive.
+#' @param sens,spec Model performance statistics (vector).
+#'
+#' @return Net sensitivity and specificity (list).
 #' @export
+#' @family diagnostic performance functions
+#' @seealso \code{\link{prob_test_outcome_combination}} for how the
+#'   probabilities are combined.
+#' @aliases net_specsens
+#' @keywords math
 #'
 #' @examples
+#' NA
+#' \dontrun{
+#' #causes an error
+#' }
 net_sensspec <- function(pos_threshold,
                          sens,
                          spec) {

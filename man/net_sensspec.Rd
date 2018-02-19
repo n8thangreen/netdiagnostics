@@ -2,13 +2,42 @@
 % Please edit documentation in R/net_senspec.R
 \name{net_sensspec}
 \alias{net_sensspec}
-\title{net_sensspec}
+\alias{net_specsens}
+\title{Net test sensitivity and specificity.}
 \usage{
 net_sensspec(pos_threshold, sens, spec)
 }
 \arguments{
-\item{spec}{}
+\item{pos_threshold}{Minimum number of positive required for overall
+positive.}
+
+\item{sens, spec}{Model performance statistics (vector).}
+}
+\value{
+Net sensitivity and specificity (list).
 }
 \description{
-net_sensspec
+Combines multiple test into a de facto single test.
 }
+\details{
+Assuming each test performance is completely defined by it sensitivity and
+specificity, various set intercept probabilities are calculated and combined,
+similar to the inclusion-exclusion formula in probability theory
+\url{https://en.m.wikipedia.org/wiki/Inclusion-exclusion_principle}.
+}
+\section{Serial vs parallel}{
+ It's assumed that the tests are done in parallel
+  but in some cases a parallel diagnostic pathway is equivalent.
+}
+
+\examples{
+NA
+\dontrun{
+#causes an error
+}
+}
+\seealso{
+\code{\link{prob_test_outcome_combination}} for how the
+  probabilities are combined.
+}
+\keyword{math}
