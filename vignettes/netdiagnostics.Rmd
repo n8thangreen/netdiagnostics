@@ -1,0 +1,56 @@
+---
+title: "netdiagnostics"
+author: "Nathan Green"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Introduction
+
+This package is designed to:
+
+- take multiple tests, completely defined by their unique sensitivity and specificity
+- combine their test results determined by a minimum number of positives required for an overall _net_ performance
+- give this net sensitivity and specificity as if it were a single test
+
+## Worked example
+
+
+### Intuition
+
+```{r, echo=FALSE, warning=FALSE, warning=F, fig.width=5, fig.height=5}
+library(VennDiagram, quietly = T, verbose = F)
+
+venn.plot <- draw.triple.venn(
+	area1 = 65,
+	area2 = 75,
+	area3 = 85,
+	n12 = 35,
+	n23 = 15,
+	n13 = 25,
+	n123 = 5,
+	category = c("Test 1", "Test 2", "Test 3"),
+	fill = c("blue", "red", "green"),
+	lty = "blank",
+	cex = 2,
+	cat.cex = 2,
+	cat.col = c("blue", "red", "green"))
+
+grid.draw(venn.plot)
+
+```
+
+
+### forumulae
+
+The maths is $Y = X\beta + \epsilon$, footnotes^[A footnote here.],
+
+```{r, echo=FALSE, results='asis'}
+knitr::kable(head(mtcars, 10))
+```
+
+

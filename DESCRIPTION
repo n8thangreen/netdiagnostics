@@ -1,0 +1,20 @@
+Package: netdiagnostics
+Type: Package
+Title: Net Sensitivity and Specificity for Multiple (Parallel) Tests
+Version: 0.1.0
+Authors@R: person("Nathan", "Green", role = c("aut", "cre"), email = "nathan.green@imperial.ac.uk")
+Maintainer: The package maintainer <nathan.green@imperial.ac.uk>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+      Rfast,
+      utils
+Suggests:
+      testthat,
+    knitr,
+    rmarkdown
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
