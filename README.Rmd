@@ -1,5 +1,7 @@
 ---
 output: github_document
+editor_options: 
+  chunk_output_type: inline
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -13,10 +15,10 @@ knitr::opts_chunk$set(
 )
 ```
 
-![](C:/Users/ngreen1/Google Drive/Pictures/license-MIT-blue.svg)
-![](C:/Users/ngreen1/Google Drive/Pictures/lifecycle-experimental-orange.svg)
 
 # netdiagnostics
+
+![](badges/lifecycle-experimental-orange.svg) ![](badges/license-MIT-blue.svg)
 
 The goal of netdiagnostics is to ...
 

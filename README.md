@@ -1,9 +1,9 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-![](C:/Users/ngreen1/Google%20Drive/Pictures/license-MIT-blue.svg) ![](C:/Users/ngreen1/Google%20Drive/Pictures/lifecycle-experimental-orange.svg)
-
 netdiagnostics
 ==============
+
+![](badges/lifecycle-experimental-orange.svg) ![](badges/license-MIT-blue.svg)
 
 The goal of netdiagnostics is to ...
 
