@@ -3,3 +3,4 @@
 ^CONDUCT\.md$
 ^docs$
 ^data-raw$
+^README\.Rmd$
