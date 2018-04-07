@@ -35,6 +35,15 @@ net_sensspec <- function(pos_threshold,
   if (length(sens) != length(spec))
     stop("Length of sens and spec must be the same.")
 
+  assert_that(all(sens >= 0))
+  assert_that(all(sens <= 1))
+  assert_that(all(spec >= 0))
+  assert_that(all(spec <= 1))
+
+  assert_that(pos_threshold >= 0)
+  if (floor(pos_threshold) != pos_threshold) message("using integer part of pos_threshold value")
+
+
   N <- length(sens)
   net_sens <- net_spec <- 0
 
