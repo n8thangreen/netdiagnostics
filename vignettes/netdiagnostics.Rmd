@@ -22,6 +22,8 @@ This package is designed to:
 
 ### Intuition
 
+Below is a Venn diagram representing the multiple tests and their combinations of test results:
+
 ```{r, echo=FALSE, warning=FALSE, warning=F, fig.width=5, fig.height=5}
 library(VennDiagram, quietly = T, verbose = F)
 
