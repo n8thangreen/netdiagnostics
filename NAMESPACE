@@ -2,3 +2,6 @@
 
 export(net_sensspec)
 export(prob_test_outcome_combination)
+import(Rfast)
+import(assertthat)
+import(utils)

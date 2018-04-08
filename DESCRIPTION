@@ -8,6 +8,7 @@ Description: When using more than one test in a diagnostic pathway these can be 
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Depends: R (>= 2.10)
 Imports:
       Rfast,
       utils,
@@ -15,6 +16,7 @@ Imports:
 Suggests:
       testthat,
       knitr,
-      rmarkdown
+      rmarkdown,
+      VennDiagram
 RoxygenNote: 6.0.1
 VignetteBuilder: knitr

@@ -17,6 +17,7 @@
 #'
 #' @return Net sensitivity and specificity (list).
 #' @export
+#' @import assertthat Rfast utils
 #' @family diagnostic performance functions
 #' @seealso \code{\link{prob_test_outcome_combination}} for how the
 #'   probabilities are combined.

@@ -7,8 +7,17 @@
 prob_test_outcome_combination(prob, n_choose)
 }
 \arguments{
-\item{n_choose}{}
+\item{prob}{Probabilities vector}
+
+\item{n_choose}{Number to choose integer}
+}
+\value{
+Single value
 }
 \description{
-prob_test_outcome_combination
+Probability of combined tests.
+}
+\examples{
+prob_test_outcome_combination(0.2, 1)
+
 }

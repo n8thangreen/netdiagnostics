@@ -1,13 +1,17 @@
 
 #' prob_test_outcome_combination
 #'
-#' @param prob
-#' @param n_choose
+#' Probability of combined tests.
 #'
-#' @return
+#' @param prob Probabilities vector
+#' @param n_choose Number to choose integer
+#'
+#' @return Single value
 #' @export
 #'
 #' @examples
+#' prob_test_outcome_combination(0.2, 1)
+#'
 prob_test_outcome_combination <- function(prob,
                                           n_choose) {
 
