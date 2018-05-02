@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 
 # netdiagnostics
 
-![](badges/lifecycle-experimental-orange.svg) ![](badges/license-MIT-blue.svg)
+![](badges/lifecycle-experimental-orange.svg) ![](badges/license-MIT-blue.svg) [![Build Status](https://travis-ci.org/n8thangreen/netdiagnostics.svg?branch=master)](https://travis-ci.org/n8thangreen/netdiagnostics)
 
 The goal of `netdiagnostics` is to combine multiple test results to form an equivalent single test with respect to sensitivity and specificity.
 
